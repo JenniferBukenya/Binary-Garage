@@ -224,8 +224,8 @@ body {
 }
 
 .main-button-red a {
-  width: 300px;
-  height:80px;
+  width: 200px;
+  height:60px;
   font-size: 20px;
   color: #fff;
   background-color: rgb(21, 76, 121);
@@ -329,21 +329,21 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #212529 !important;
+  color: #154c79 !important;
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #fb5849 !important;
+  color: #514948 !important;
 }
 
 .background-header .nav li a.active {
-  color: #fb5849 !important;
+  color: #514948 !important;
 }
 
 .header-area {
   background-color: rgba(250, 250, 250, 0.8);
   position: absolute;
-  top: 40px;
+  /* top: 0px; */
   left: 0;
   right: 0;
   z-index: 100;
@@ -407,7 +407,7 @@ header
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: #212529;
+  color: #154c79;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -420,12 +420,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #f5a425 !important;
+  color: #514948 !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #f5a425 !important;
+  color: #514948 !important;
   opacity: 1;
 }
 
@@ -487,7 +487,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #f5a425 !important;
+  color: #514948 !important;
   padding-left: 25px;
 }
 
@@ -627,7 +627,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #f5a425;
+  color: #514948;
 }
 
 @media (max-width: 1200px) {
@@ -646,7 +646,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #f5a425 !important;
+    color: #514948 !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -700,11 +700,11 @@ header
     padding: 0px !important;
     border: none !important;
     background: #f7f7f7 !important;
-    color: #191a20 !important;
+    color: #154c79 !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #f5a425 !important;
+    color: #514948 !important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
