@@ -226,7 +226,7 @@ body {
 .main-button-red a {
   width: 200px;
   height:60px;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   background-color: rgb(21, 76, 121);
   padding: 12px 30px;
@@ -701,6 +701,7 @@ header
     border: none !important;
     background: #f7f7f7 !important;
     color: #154c79 !important;
+
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
