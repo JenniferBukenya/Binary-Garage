@@ -783,10 +783,21 @@ banner
   width: 100%;
 }
 
+@keyframes typingAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .main-banner .caption {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  /* text-align: center;
+  margin-left:200px; */
 }
 
 .main-banner .caption h6 {
@@ -811,24 +822,33 @@ banner
 .main-banner .caption h4 {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 28px;
-  /*text-transform: uppercase;*/
-  font-weight: 500;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.main-banner .caption h2 em {
-  font-style: normal;
-  color: #f5a425;
-  font-weight: 900;
   font-size: 24px;
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+  /*text-transform: uppercase;*/
+  font-weight: 200;
+  color: #fff;
+  letter-spacing: 2px;
 }
 
-.main-banner .caption p {
+/* .main-banner .caption h2{
+  font-style: normal;
+  color: #f5f5f5;
+  font-weight: 200;
+  font-size: 28px; */
+/* } */
+
+.main-banner .caption .solution p {
   color: #fff;
-  font-size: 14px;
-  max-width: 570px;
+  font-size: 20px;
+  display: inline-block;
+  /* text-align: center; */
+  /* margin-left: 30px; */
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingAnimation 4s steps(40) forwards;
+
+  /* max-width: 570px; */
+  /* letter-spacing: 2px; */
 }
 
 .main-banner .caption .main-button-red {
@@ -850,7 +870,9 @@ banner
 services
 ---------------------------------------------
 */
-
+body{
+  
+}
 .services {
   margin-top: -135px;
   position: absolute;
@@ -858,13 +880,14 @@ services
 }
 
 .services .item {
-  background-image: url(../images/services-bg.jpg);
+  background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   border-radius: 20px;
   text-align: center;
   color: #fff;
+  /* font-family:Georgia, 'Times New Roman', Times, serif; */
   padding: 40px;
 }
 
@@ -885,16 +908,28 @@ services
   font-size: 13px;
 }
 
+.cap{
+  background-color: #154c79;
+  height: 30px;
+  border-radius:10px;
+  margin-top:20px;
+}
+.cap p{
+  font-size:medium;
+  color:#c9cbcc;
+}
+
 .solns {
   display: flex;
   justify-content: space-around;
 }
 
 .soln {
-  background-image:url(../images/soln-bg.jpg);
-  /* background-color: rgb(243, 238, 238,0.5);  */
+  /* background-image:url(../images/soln-bg.jpg); */
+  background-color: #c9cbcc; 
+  /* background-color: #154c79;  */
   border-radius: 190px;
-  border:1px solid white;
+  border:1px solid;
   width: 200px;
   height: 200px;
   padding: 10px;
@@ -903,7 +938,7 @@ services
 .soln p {
   text-align: center;
   margin-top: 60px;
-  color: #fff;
+  color: #154c79;
   font-size: 18px;
 }
 .solution {
@@ -1087,6 +1122,7 @@ section.upcoming-meetings .categories .main-button-red a {
 .meeting-item .down-content .date {
   width:80px;
   height: 80px;
+  /* margin-right:15px; */
   background-color: whitesmoke;
   border-radius:50px;
   /* float: left; */
@@ -1096,11 +1132,12 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content .date h6 {
+  margin-top:15px;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 750;
   text-align: center;
-  color: rgb(94, 91, 91);
+  color: #404b51;
 }
 
 .meeting-item .down-content .date span {
@@ -1117,7 +1154,7 @@ section.upcoming-meetings .categories .main-button-red a {
   color: #f8f9fa;
   font-weight: 500;
   display: inline-block;
-  /* margin-bottom: 15px; */
+  /* padding-left: 15px; */
 }
 
 .meeting-item .down-content p {
@@ -1149,7 +1186,7 @@ section.apply-now .item {
 }
 
 section.apply-now .item h3 {
-  color: #f5a425;
+  color: #154c79;
   text-transform: none;
   font-size: 24px;
   font-weight: 700;
@@ -1157,7 +1194,7 @@ section.apply-now .item h3 {
 }
 
 section.apply-now .item p {
-  color: #f5a425;
+  color: #154c79;
   margin-bottom: 20px;
 }
 
@@ -1193,7 +1230,7 @@ section.apply-now .item p {
   transition: transform 200ms ease-in-out;
 }
 .accordion-head.is-open {
-  color: #f5a425;
+  color: #154c79;
   border-bottom: none;
 }
 .accordion-head.is-open .icon {
@@ -1396,14 +1433,14 @@ section.our-facts h2 {
 
 .count-digit {
   margin: 5px 0px;
-  color: #f5a425;
+  color: #404b51;
   font-weight: 700;
   font-size: 36px;
 }
 .count-title {
   font-size: 18px;
   font-weight: 500;
-  color: #fff;
+  color: #404b51;
   letter-spacing: 0.5px;
 }
 
@@ -1507,7 +1544,7 @@ section.contact-us #contact button:hover {
 }
 
 section.contact-us .right-info {
-  background-image: url(../images/services-bg.jpg);
+  background-image: url(../images/background.png);
   /* background-color: #a12c2f; */
   border-radius: 20px;
   padding: 40px;
